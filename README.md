@@ -8,4 +8,4 @@ Raccolta di script e di software
 
 * test UDP server da bash
 
-> echo "Ciao!" > /dev/udp/\[IP SERVER\]/\[PORT SERVER\]
+  echo "Ciao!" > /dev/udp/\[IP SERVER\]/\[PORT SERVER\]
