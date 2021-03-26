@@ -1,4 +1,4 @@
-# Obietti
+# OBIETTIVI
 
 Costruzione di un modello di comunicazione a ring con gestione a oracolo dell'infrastruttura di comunicazione.
 
