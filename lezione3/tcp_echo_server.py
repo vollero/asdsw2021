@@ -14,9 +14,12 @@ conn, addr = TCPServerSocket.accept()
 print('Client: {}'.format(addr))
 while True:
     data = conn.recv(1024)
+
     if not data:
         break
+
     print('{}: echo message: {}'.format(addr, data[:-1].decode('utf-8')))
+    
     conn.sendall(data)
 
 conn.close()
