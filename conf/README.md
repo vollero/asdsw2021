@@ -2,5 +2,5 @@
 
 ## .vimrc
 
-* File di configurazione di vim. 
-* Copiarlo nella propria home directory.
+* Descrizione: File di configurazione di vim. 
+* Installazione: Copiarlo nella propria home directory.
