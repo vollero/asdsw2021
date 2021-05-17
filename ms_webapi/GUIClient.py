@@ -4,7 +4,7 @@ import tkinter as tk
 
 window = tk.Tk()
 
-address = 'http://192.168.112.120:12345'
+address = 'http://127.0.0.1:12345'
 
 outputMessage = tk.Text()
 
