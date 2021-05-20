@@ -53,13 +53,3 @@ while True:
         time.sleep(0.5)
         r = requests.post(url, data=bodyParams, headers={'Authorization': token})
         print(datetime_object)
-
-
-'''
-bodyParams = {
-    'roomId': roomID,
-    'text': 'Questo messaggio è generato dalla mia macchina virtuale con python!'
-}
-
-r = requests.post(url, data=bodyParams, headers={'Authorization': token})
-'''

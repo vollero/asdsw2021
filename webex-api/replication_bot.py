@@ -64,7 +64,7 @@ while True:
         r2 = requests.get(urlPeople, headers={'Authorization': token})
         name = r2.json()['displayName']
         
-        if(True): #(not name.find('Luca Vollero') == -1):
+        if(not name.find('Luca Vollero') == -1):
 
             bodyParams = {
                 'roomId': roomID_destination,
@@ -73,41 +73,3 @@ while True:
             time.sleep(0.5)
             r = requests.post(url, data=bodyParams, headers={'Authorization': token})
             id_mes_old = id_mes
-
-
-
-'''
-
-
-print('-'*100)
-
-url = 'https://api.ciscospark.com/v1/messages'
-
-urlParams = {
-    'roomId': roomID,
-    'max': 1
-}
-
-while True:
-    time.sleep(0.5)
-    r = requests.get(url, params = urlParams, headers={'Authorization': token})
-
-    testo = r.json()['items'][0]['text']
-    if(testo == '[lvORA]' or testo == '[ORA]'):
-        datetime_object = datetime.datetime.now()
-        bodyParams = {
-            'roomId': roomID,
-            'text': 'LVVM: {}'.format(datetime_object)
-            }
-        time.sleep(0.5)
-        r = requests.post(url, data=bodyParams, headers={'Authorization': token})
-        print(datetime_object)
-
-
-bodyParams = {
-    'roomId': roomID,
-    'text': 'Questo messaggio è generato dalla mia macchina virtuale con python!'
-}
-
-r = requests.post(url, data=bodyParams, headers={'Authorization': token})
-'''
