@@ -6,7 +6,9 @@
 * Il formato del file di salvataggio deve essere il seguente
 
 sorgente;numero\_di\_sequenza;messaggio
+
 192.168.0.1;1;Messaggio\_inviato\_dal\_pc\_di\_claudio
+
 .....;.....;.....
 
 # Esercizio 2
